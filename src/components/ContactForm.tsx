@@ -9,11 +9,15 @@ const ContactForm: React.FC = () => {
 
     if (form.current) {
       emailjs
-        .sendForm('seu-servico-id', 'seu-template-id', form.current, 'sua-chave-publica')
-        .then((result) => {
-          alert('Mensagem enviada com sucesso!');
+        .sendForm('service_r8mhf0t', 'template_wk04fdj', form.current, 'FETV3k6vg508xBaiO')
+        .then((result: { status: number; text: string }) => {
+          if (result.status === 200) {
+            alert('Mensagem enviada com sucesso!');
+          } else {
+            alert('Erro ao enviar mensagem.');
+          }
         })
-        .catch((error) => {
+        .catch(() => {
           alert('Erro ao enviar mensagem.');
         });
     }
