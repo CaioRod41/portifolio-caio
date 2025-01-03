@@ -9,5 +9,5 @@ export default defineConfig({
       external: ['emailjs-com'], // Exclui emailjs-com do bundle
     },
   },
-  base: 'portifolio-caio', // Adicione esta linha com o nome do seu repositório
+  base: '/portifolio-caio/', // Substitua com o nome correto do seu repositório
 });

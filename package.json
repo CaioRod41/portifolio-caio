@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/CaioRod41/portifolio-caio.git",
+  "homepage": "https://CaioRod41.github.io/portifolio-caio", 
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
